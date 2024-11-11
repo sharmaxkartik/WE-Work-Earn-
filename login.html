@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+
+  <!-- Login Form Container -->
+  <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <!-- Input Fields -->
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" id="password" placeholder="Password" required>
+
+      <!-- Show Password Checkbox -->
+      <label>
+        <input type="checkbox" onclick="togglePassword()"> <br>Show Password<br>
+      </label>
+
+      <!-- Login Button -->
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function togglePassword() {
+      const passwordField = document.getElementById("password");
+      const confirmPasswordField = document.getElementById("confirmPassword");
+      const type = passwordField.type === "password" ? "text" : "password";
+      passwordField.type = type;
+      confirmPasswordField.type = type;
+    }
+  </script>
+</body>
+</html>
