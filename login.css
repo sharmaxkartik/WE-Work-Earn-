@@ -1,69 +1,86 @@
 /* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-/* Body Styling */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: lightseagreen;
-}
-
-/* Container Styling */
-.signup-container {
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-}
-
-.signup-container h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-/* Input Field Styling */
-.signup-container input[type="text"],
-.signup-container input[type="email"],
-.signup-container input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-/* Checkbox Label Styling */
-.signup-container label {
-  display: block;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #333;
-}
-
-/* Button Styling */
-button {
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 3px;
-  margin-top: 20px;
-  padding: 10px 20px;
-  border: none;
-  color: #fff;
-  background-color: lightseagreen;
-  transition: all ease 0.5s;
-  cursor: pointer;
-}
-
-button:hover {
-  box-shadow: 0px 0px 15px #000000; /* Centered shadow on all sides */
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightseagreen;
+  }
+  
+  /* Login Form Container Styling */
+  .login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Heading Styling */
+  .login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input Field Styling */
+  .login-container input[type="email"],
+  .login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Password Toggle Styling */
+  .password-toggle {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .password-toggle input {
+    margin-right: 5px;
+  }
+  
+  /* Button Styling */
+  button {
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    background-color: lightseagreen;
+    transition: all ease 0.5s;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    box-shadow: 0px 0px 15px #000000; /* Centered shadow on all sides */
+  }
+  
+  /* Sign-Up Redirect Styling */
+  p {
+    margin-top: 20px;
+  }
+  
+  p a {
+    text-decoration: none;
+    color: lightseagreen;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  
