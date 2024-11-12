@@ -23,12 +23,17 @@
       </div>
       
       <button type="submit">Login</button>
+      
+      <!-- Already Have an Account Button -->
+      <div class="account-link">
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </div>
     </form>
-    
-    <!-- Sign-up Redirect -->
-    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
   </div>
+
   <script>
+    // Password Show/Hide Toggle
     document.getElementById("showPassword").addEventListener("change", function() {
       var passwordField = document.getElementById("password");
       if (this.checked) {
@@ -38,7 +43,6 @@
       }
     });
   </script>
-  
 
 </body>
 </html>
