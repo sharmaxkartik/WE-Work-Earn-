@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: lightseagreen;
+  background-color: black;
 }
 
 /* Login Form Container Styling */
@@ -61,13 +61,13 @@ button {
   padding: 10px 20px;
   border: none;
   color: #fff;
-  background-color: lightseagreen;
+  background-color:#000000;
   transition: all ease 0.5s;
   cursor: pointer;
 }
 
 button:hover {
-  box-shadow: 0px 0px 15px #000000; /* Centered shadow on all sides */
+  box-shadow: 0px 0px 15px lightseagreen; /* Centered shadow on all sides */
 }
 
 /* Sign-Up and Already Account Link Styling */
@@ -78,7 +78,7 @@ button:hover {
 
 .account-link a {
   text-decoration: none;
-  color: lightseagreen;
+  color: black;
 }
 
 .account-link a:hover {
