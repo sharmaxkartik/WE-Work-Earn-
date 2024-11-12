@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laborer Dashboard</title>
+    <link rel="stylesheet" href="laborer_dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="logo"></div>
+        <h1 id="h1">Welcome, Labourer</h1>
+       <div class="Saved-nav">
+        <ul>
+        <a  href="#"><li>Saved Jobs</li></a>
+        <a  href="#"><li>Profile</li></a>
+        <a href="laborer.signup.html"><li>SignUp</li></a>
+        <a href="laborer_login.html"><li>Login</li></a>
+       </ul>
+       </div>
+       
+        <input type="text" placeholder="Search for Job..." class="dashboard-input">
+    </header>
+    
+    <!-- Job Listings Section -->
+    <main class="job-listings-section">
+        <h2 id="h2_heading">Available Job Listings</h2>
+        <div id="job-listings" class="job-listings">
+            <!-- Job listings will be added dynamically here -->
+        </div>
+    </main>
+
+    <script src="laborer_dashboard.js"></script>
+</body>
+</html>
