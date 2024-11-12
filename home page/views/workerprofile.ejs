@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/stylesheet/workerprofile.css" />
+  </head>
+  <body>
+    <div class="profile-container">
+      <div class="profile-header">
+        <div class="profile-icon">
+          <img src="/images/profile-icon.png" alt="Profile Icon" />
+        </div>
+        <h2>XYZ</h2>
+        <p class="contact-info">Contact No: 9XXXXXXX</p>
+        <p class="contact-info">Email:xyz123@gmail.com</p>
+        <p class="contact-info">Date of Birth: 16/04/2000</p>
+        <p class="contact-info">Proffession: Machine Operator</p>
+        <p class="contact-info">Location: Gwalior,Madhya Pradesh</p>
+      </div>
+
+      <div class="profile-details">
+        <p>
+          <strong>Current Pay:</strong> <span id="currentPay">700/day</span>
+        </p>
+        <button onclick="editPay()">Edit Current Pay</button>
+      </div>
+
+      <div class="jobs">
+        <div class="job-item">
+          <p>Jobs Done</p>
+          <span>10</span>
+        </div>
+        <div class="job-item">
+          <p>Jobs Applied</p>
+          <span>5</span>
+        </div>
+        <div class="job-item">
+          <p>Jobs Saved</p>
+          <span>3</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function editPay() {
+        const newPay = prompt("Enter new pay:");
+        if (newPay) {
+          document.getElementById("currentPay").textContent = `${newPay}/day`;
+        }
+      }
+    </script>
+  </body>
+</html>

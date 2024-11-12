@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Dashboard</title>
+    <link rel="stylesheet" href="/stylesheet/company_dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="dashboard-header">
+      <h1 id="h1-heading">Company Dashboard</h1>
+      <p>Manage Your Job Postings and View Applications</p>
+    </header>
+
+    <!-- Dashboard Stats Section -->
+    <section class="stats-section">
+      <div class="stat-card">
+        <h3>Total Job Posts</h3>
+        <p id="total-jobs">5</p>
+      </div>
+      <div class="stat-card">
+        <h3>Total Applications</h3>
+        <p id="total-applications">32</p>
+      </div>
+      <div class="stat-card">
+        <h3>Open Positions</h3>
+        <p id="open-positions">4</p>
+      </div>
+    </section>
+
+    <!-- Job Postings Section -->
+    <section class="job-postings-section">
+      <h2>Your Job Postings</h2>
+      <div id="job-postings" class="job-postings">
+        <!-- Job postings will be added dynamically here -->
+      </div>
+      <button class="add-job-btn" onclick="addNewJob()">+ Add New Job</button>
+    </section>
+
+    <!-- Filter and Search Section -->
+    <section class="filter-section">
+      <h3>Filter Job Applications</h3>
+      <input
+        type="text"
+        placeholder="Search by Job Title..."
+        onkeyup="filterJobs(this.value)"
+      />
+    </section>
+
+    <script src="/javascripts/company_dashboard.js"></script>
+  </body>
+</html>
