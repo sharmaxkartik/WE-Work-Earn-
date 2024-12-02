@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/stylesheet/login.css" />
+    <!-- Link to external CSS file -->
+  </head>
+  <body>
+    <!-- Login Form Container -->
+    <div class="login-container">
+      <h2>Login</h2>
+
+      <!-- Login Form -->
+      <form action="/login" method="post">
+        <input type="email" placeholder="Email Address" required />
+        <input type="password" id="password" placeholder="Password" required />
+
+        <!-- Show Password Toggle -->
+        <div class="password-toggle">
+          <input type="checkbox" id="showPassword" /> Show Password
+        </div>
+
+        <button type="submit">Login</button>
+
+        <!-- Already Have an Account Button -->
+        <div class="account-link">
+          <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      // Password Show/Hide Toggle
+      document
+        .getElementById("showPassword")
+        .addEventListener("change", function () {
+          var passwordField = document.getElementById("password");
+          if (this.checked) {
+            passwordField.type = "text"; // Show password
+          } else {
+            passwordField.type = "password"; // Hide password
+          }
+        });
+    </script>
+  </body>
+</html>
