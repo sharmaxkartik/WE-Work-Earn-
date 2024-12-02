@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Setup</title>
+    <link rel="stylesheet" href="/stylesheet/profile-setup.css" />
+    <!-- Link to the external CSS file -->
+  </head>
+  <body>
+    <!-- Profile Setup Form Container -->
+    <div class="profile-container">
+      <h2>Complete Your Profile</h2>
+
+      <!-- Photo Upload Section -->
+      <div class="profile-photo">
+        <label for="profile-photo">Upload Your Photo:</label>
+        <input type="file" id="profile-photo" accept="image/*" />
+      </div>
+
+      <!-- Skills Section -->
+      <div class="skills">
+        <label for="skills">Skills:</label>
+        <input
+          type="text"
+          id="skills"
+          placeholder="Enter your skills (e.g., Plumbing, Carpentry)"
+          required
+        />
+      </div>
+
+      <!-- Certificates Section -->
+      <div class="certificates">
+        <label for="certificates">Certificates:</label>
+        <input
+          type="file"
+          id="certificates"
+          accept=".pdf,.doc,.docx"
+          multiple
+        />
+      </div>
+
+      <!-- Work Experience Section -->
+      <div class="work-experience">
+        <label for="work-experience">Work Experience:</label>
+        <textarea
+          id="work-experience"
+          rows="4"
+          placeholder="Describe your previous work experience..."
+          required
+        ></textarea>
+      </div>
+
+      <!-- Field of Work Dropdown -->
+      <div class="field-of-work">
+        <label for="field-of-work">Field of Work:</label>
+        <select id="field-of-work">
+          <option value="Warehouse Worker">Warehouse Worker</option>
+          <option value="Plumber">Plumber</option>
+          <option value="Manufacturing Worker">Manufacturing Worker</option>
+          <option value="Food Sector Worker">Food Sector Worker</option>
+          <option value="Pest Control Worker">Pest Control Worker</option>
+          <option value="Gardener">Gardener</option>
+          <option value="Carpenter">Carpenter</option>
+          <option value="Truck Driver">Truck Driver</option>
+          <option value="Electrician">Electrician</option>
+          <option value="Mechanic">Mechanic</option>
+          <option value="Welder">Welder</option>
+          <option value="Construction Worker">Construction Worker</option>
+        </select>
+      </div>
+
+      <!-- Submit Button -->
+      <a href="/workerprofile"><button type="submit">Save Profile</button></a>
+    </div>
+  </body>
+</html>

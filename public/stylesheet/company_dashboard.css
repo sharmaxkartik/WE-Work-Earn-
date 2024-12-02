@@ -1,0 +1,162 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+}
+
+/* Header Styling */
+.dashboard-header {
+    text-align: center;
+    background-color: #20B2AA;
+    color: white;
+    padding: 2rem;
+}
+#h1-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.dashboard-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Stats Section */
+.stats-section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.stat-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    color: #0077B5;
+    font-size: 1rem;
+}
+
+.stat-card p {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Job Postings Section */
+.job-postings-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.job-postings-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.job-postings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.job-card {
+    background-color: white;
+    width: 300px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: left;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.job-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.job-card p {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.job-card .job-status {
+    font-weight: bold;
+    color: #0077B5;
+}
+
+.job-card .view-applications-btn {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #20B2AA;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.job-card .view-applications-btn:hover {
+    background-color: #90D5FF;
+    color: black;
+}
+
+/* Add Job Button */
+.add-job-btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #20B2AA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-job-btn:hover {
+    background-color: #90D5FF;
+    color: #000000;
+}
+
+/* Filter Section */
+.filter-section {
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.filter-section input {
+    padding: 1rem;
+    width: 400px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
